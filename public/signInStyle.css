@@ -1,0 +1,117 @@
+a:hover,a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+.tab{
+	 /*background: #200122;
+	 background: linear-gradient(to bottom, #6f0000, #200122);*/
+	 padding: 40px 50px;
+	 position: relative;
+}
+
+.tab:before{
+	 content: "";
+	 width: 100%;
+	 height: 100%;
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 /*background: linear-gradient(#2e3a6a,#2f0b45);*/
+	 opacity: 0.85;
+}
+
+.tab .nav-tabs{
+	 border-bottom: none;
+	 padding: 0 20px;
+	 position: relative;
+}
+
+.tab .nav-tabs li{ 
+	margin: 0 30px 0 0; 
+}
+
+.tab .nav-tabs li a{
+	 font-size: 18px;
+	 color: #000; /*tab not select color */
+	 border-radius: 0;
+	 text-transform: uppercase;
+	 background: transparent;
+	 padding: 0;
+	 margin-right: 0;
+	 border: none;
+	 border-bottom: 2px solid transparent;
+	 opacity: 0.5;
+	 position: relative;
+	 transition: all 0.5s ease 0s;
+}
+
+.tab .nav-tabs li a:hover{ 
+	background: transparent; 
+}
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:focus,
+.tab .nav-tabs li.active a:hover{
+	 border: none;
+	 background: transparent;
+	 opacity: 1;
+	 border-bottom: 2px solid #eec111; /*tab panel underline color */
+	 color: #000; /* tab panel text color */
+}
+
+.tab .tab-content{
+	 padding: 20px 0 0 0;
+	 margin-top: 40px;
+	 background: transparent;
+	 z-index: 1;
+	 position: relative;
+}
+
+.form-horizontal .form-group{
+	 margin: 0 0 15px 0;
+	 position: relative;
+}
+
+.form-horizontal .form-control{
+	 height: 40px;
+	 background: rgba(192,192,192,1); /*label back color*/
+	 border: none;
+	 border-radius: 20px;
+	 box-shadow: none;
+	 padding: 0 20px;
+	 font-size: 14px;
+	 font-weight: bold;
+	 color: #000; /* text color in label */ 
+	 transition: all 0.3s ease 0s;
+}
+
+.form-horizontal .form-control:focus{
+	 box-shadow: none;
+	 outline: 0 none;
+}
+
+.form-horizontal .form-group label{
+	 padding: 0 20px;
+	 color: #000; /* text coolor in label */
+	 text-transform: capitalize;
+	 margin-bottom: 10px;
+}
+
+.form-horizontal .btn{
+	 width: 100%;
+	 background: #eec111;
+	 padding: 10px 20px;
+	 border: none;
+	 font-size: 14px;
+	 font-weight: bold;
+	 color: #000; /* button text color */
+	 border-radius: 20px;
+	 text-transform: uppercase;
+	 margin: 20px 0 30px 0;
+}
+
+@media only screen and (max-width: 479px){
+ 	.tab{ padding: 40px 20px; }
+}
